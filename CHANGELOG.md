@@ -1,5 +1,9 @@
 # Google Translate Changelog
 
+## [Enhancement] - 2023-06-19
+
+- Added proxy support
+
 ## [Fix] - 2023-06-15
 
 - Fixed langauge code for Hebrew
