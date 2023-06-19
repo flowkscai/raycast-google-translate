@@ -1,4 +1,4 @@
-import translate from "@iamtraction/google-translate";
+import translate from "@flowkscai/google-translate";
 import { LanguageCode } from "./languages";
 import { LanguageCodeSet } from "./types";
 
@@ -27,6 +27,7 @@ export async function simpleTranslate(text: string, options: LanguageCodeSet): P
     const translated = await translate(text, {
       from: options.langFrom,
       to: options.langTo,
+      proxy: process.env.HTTPS_PROXY,
     });
 
     return {
